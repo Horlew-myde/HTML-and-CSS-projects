@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+
+  // Function to save the scroll position
+  function saveScrollPosition() {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+  }
+
+  // Function to restore the scroll position
+  function restoreScrollPosition() {
+    const scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+      window.scrollTo(0, parseInt(scrollPosition));
+      sessionStorage.removeItem('scrollPosition');
+    }
+  }
+
+  // Attach saveScrollPosition function to 'beforeunload' event
+  window.addEventListener('beforeunload', saveScrollPosition);
+
+  // Call restoreScrollPosition function on 'load' event
+  window.addEventListener('load', restoreScrollPosition);
+</script>
+
+
+  <head>
+    <title>
+      FlutterWave Home Page
+      <img src="logos/flutterwave_logo.svg.png">
+    </title>
+ 
+     <!--                 ---------CSS Files-------                       -->
+     <link rel="stylesheet" href="styles/general.css">
+     <link rel="stylesheet" href="styles/head.css">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <!-- <nav class="nav_bar"> -->
+          <div class="left-section">
+            <img class="flutterlogo" src="logos/flutterwave_logo.svg.png" alt="FlutterWave Logo">
+          </div>
+            <nav class="middle-section">
+              <span class="nav-label">Enterprise</span>
+              <span class="nav-label">SME</span>
+              <span class="nav-label">Personal</span>
+              <span class="nav-label">Resources</span>
+              <span class="nav-label">Developers</span>
+              <span class="nav-label">Company</span>
+            </nav>
+            <div class="right-section">
+              <a class="sign-in-text">Sign in</a>
+            </div>
+        </div> 
+    </header>
+    <main>
+
+      <section class="top-section">
+        <div class="intro-class">
+          <span class="top-intro"> Endless possibilities</span>
+          <span class="top-intro2">for all</span>
+          <span class="intro-comment">Unlocking boundless payment opportunities for enterprises, individuals, small businesses, emerging markets, and startups alike.</span>
+          <button class="contact-sales-button">
+            Contact sales
+          </button>
+        </div>
+
+
+        <div class="customer1-line">
+          <div class="customer1-line-container">
+            <img class="famasi" src="images/Famasi-3.webp">
+            <div class="famasi-label">Famasi</div>
+          </div>
+          <div class="famasi-line">
+            Send money home to loved ones, sell online as a small business, process global payments as an enterprise, build financial products as a startup. With Flutterwave, the question isn't what's possible—it is: what isn't?
+          </div>
+        </div>
+
+        <div class="customer2-line">
+          <div class="customer2-line-container">
+            <img class="foot-city" src="images/foot-city.webp">
+            <div class="foot-city-label">
+              Foot city
+            </div>
+          </div>
+        </div>
+
+
+        <!-- customer logos-->
+
+        <div class="customer-company-section">
+          <p class="customer-company-section-speech">We are trusted by <span class="customer-span">1 million+</span> businesses & <span class="customer-span">2 million+</span> individuals</p>
+          <div class="customer-company-logo-list">
+            <img class="customer-company-logo" src="logos/uber.svg">
+            <img class="customer-company-logo" src="logos/mtn.svg">
+            <img class="customer-company-logo" src="logos/chipper.svg">
+            <img class="customer-company-logo" src="logos/piggyvest.svg">
+            <img class="customer-company-logo" src="logos/wise.svg">
+            <img class="customer-company-logo" src="logos/microsoft.svg">
+          </div>
+        </div>
+
+        <!-- Enterprise section -->
+
+        <div class="Enterprise-section" >
+          <div class="Enterprise-statement">
+            Endless payment possibilities <span class="Enterprise-statement2">for enterprises</span>
+          </div>
+          <div class="enterprise-flex-column">
+            <div class="enterprise-block-1">
+              <p class="sub-block-1">Online Checkout</p>
+              <p class="sub-block-2">Our online checkout features our smart payment ordering system, incredible speed, and beautiful simplicity. It's designed to grow your revenue and provide the best payment experience to your customers.</p>
+              <button class="get-started-button">Get started</button>
+            </div>
+            <div class="enterprise-block-2">
+              <img class="phone" src="images/checkout.png">
+            </div>
+            <div class="enterprise-block-3" >
+              <div class="enterprise-block-4">
+                <p class="sub-block-3">Accept payments</p>
+                <p class="sub-block-4">Easily receive money from anyone, anywhere in the world via our multitude of secure payment methods.</p>
+                <p class="sub-block-5">Learn more &#62; </p>
+              </div>
+              <div class="enterprise-block-5">
+                <p class="sub-block-6">Transfers (Payout)</p>
+                <p class="sub-block-7">Make single or bulk transfers to bank accounts from your Flutterwave dashboard.</p>
+                <p class="sub-block-8">Learn more <span class="arrow"> &#62;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MID SECTION -->
+      <section class="mid-section">
+        <div class="mid-class">
+          <p class="mid-intro">
+            Endless payment possibilities for every <span class="greened-font">Small Business.</span>
+          </p>
+          <div class="small-business-flex-A">
+            <div class="small-business-flex1">
+              <p class="small-business-flex1-sub1">Store</p>
+              <p class="small-business-flex1-sub2">Create a free ecommerce website and start selling worldwide with just a few clicks.</p>
+              <button class="small-business-flex1-button">Start selling</button>
+            </div>
+            <div class="yanga-div">
+              <img class="yanga-beauty-pic" src="images/yanga-beauty.webp">
+            </div>
+          </div>
+
+          <div class="small-business-flex-B">
+            <div>
+              <img class="creator-pic" src="images/creator.webp">
+              <p class="sub-block-9">A platform for you, whether you’re a big business or a solo artist.</p>
+            </div>
+            <div>
+              <div class="small-business-flex2">
+                <p class="small-business-flex2-sub1">Invoices</p>
+                <p class="small-business-flex2-sub2">Generate professional invoices for your customers and get paid from anywhere.</p>
+                <div class="sub-block-10">Get started &#62; </div>
+              </div>
+              <div class="small-business-flex3">
+                <p class="small-business-flex3-sub1">Payment links</p>
+                <p class="small-business-flex3-sub2">Receive one-off or recurring payments from anyone, anywhere, via your unique payment link.</p>
+                <div class="sub-block-10">Learn more &#62; </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section>
+        <div class="strength-play">
+          <p class="strength-play-message">
+            Let’s play to our strengths,<br> shall we? You focus on bringing your amazing ideas to life and <br>we focus on providing all the <span class="greened-font-b">commerce tools</span> you need.
+          </p>
+          <button class="strength-play-button">Okay, let’s go</button>
+        </div>
+
+        <div class="mid-section-2">
+          <p class="mid-section-2-intro">
+            Endless payment <br> possibilities for <br> every <span class="pinked-word">individual</span>
+          </p>
+
+          <p class="mid-section-2-message">
+            Flutterwave offers a host of seamless products for individuals <br> 
+            ensuring smooth transactions and efficient money management.
+          </p>
+          <section class="features">
+            <div class="feature">
+              <h2>Send money to loved ones</h2>
+              <p>Experience the convenience and security of Send, enabling you to effortlessly and securely transfer funds to your beloved ones residing overseas. Begin sharing financial support with the ones who hold significance in your life right here</p>
+            </div>
+            
+            <div class="feature">
+              <h2>Shop online</h2>
+              <p>Explore a world of possibilities as you Discover, Shop, and have your purchases conveniently delivered from your cherished online businesses. Embark on a secure shopping journey and relish the joy of acquiring great items from amazing small businesses, right here</p>
+            </div>
+            
+            <div class="feature">
+              <h2>Find events and Buy tickets</h2>
+              <p>Browse upcoming events and secure your ticket on our Afri ticket platform here</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="mid-section-bottom">
+          <p class="mid-section-bottom-intro">
+            Well documented and <br> easy-to-use <span class="pinked-word">APIs</span> for <br> <span class="pinked-word">developers</span>
+          </p>
+          <p class="mid-section-bottom-intro-message">
+            We have done the core payments integrations and abstractions, so your team can easily integrate with our APIs and access multiple payment functionalities.
+          </p>
+          <p class="mid-section-bottom-lists">&#11052; Quick transfers</p>
+          <p class="mid-section-bottom-lists">&#11052; Initiate one-time and recurring payments</p>
+          <p class="mid-section-bottom-lists">&#11052; Payment verification</p>
+          <p class="mid-section-bottom-lists">&#11052; Instant virtual cards creation</p>
+          <p class="mid-section-bottom-lists">&#11052; Customer verification</p>
+          <button class="read-api-button">Read the API docs</button>
+        </div>
+      </section>
+
+
+        <!-- ---------------BOTTOM SECTION--------------- -->
+
+      <section class="bottom-section">
+        <div class="">
+          Our global reach
+        </div>
+
+        <div>
+          <div>
+            <p>30+ Currencies</p>
+              <p>We accept payments in more than thirty currencies.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      
+      
+    </main>
+  </body>
+</html>
+
+
